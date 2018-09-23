@@ -1,30 +1,38 @@
 package id.ceolabs.superizqi.submission;
 
 public class ClassObjek {
-    public String namaDepan,namaBelakang,gambar;
+    public String namaWisata,tarifWisata,gambarWisata,detailWisata;
 
-    public String getNamaDepan(){
-        return namaDepan;
+    public void setNamaWisata(String namaWisata) {
+        this.namaWisata = namaWisata;
     }
 
-    public String getGambar() {
-        return gambar;
+    public void setDetailWisata(String detailWisata) {
+        this.detailWisata = detailWisata;
     }
 
-    public String getNamaBelakang() {
-        return namaBelakang;
+    public void setTarifWisata(String tarifWisata) {
+        this.tarifWisata = tarifWisata;
     }
 
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
+    public void setGambarWisata(String gambarWisata) {
+        this.gambarWisata = gambarWisata;
     }
 
-    public void setNamaBelakang(String namaBelakang) {
-        this.namaBelakang = namaBelakang;
+    public String getDetailWisata() {
+        return detailWisata;
     }
 
-    public void setNamaDepan(String namaDepan) {
-        this.namaDepan = namaDepan;
+    public String getGambarWisata() {
+        return gambarWisata;
+    }
+
+    public String getNamaWisata() {
+        return namaWisata;
+    }
+
+    public String getTarifWisata() {
+        return tarifWisata;
     }
 
 }

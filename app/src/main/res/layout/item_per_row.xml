@@ -7,10 +7,10 @@
     >
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:background="#000"
+        android:background="#fff"
         android:id="@+id/gambar_di_row"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         />
 
@@ -23,20 +23,20 @@
         >
 
         <TextView
-            android:id="@+id/tv_namadepan"
+            android:id="@+id/tv_namaWisata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama Depan"
+            android:text="Nama Wisata"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginBottom="8dp"
             />
 
         <TextView
-            android:id="@+id/tv_namabelakang"
+            android:id="@+id/tv_tarifWisata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="Nama Belakang"
+             android:text="Tarif Wisata"
             />
     </LinearLayout>
 

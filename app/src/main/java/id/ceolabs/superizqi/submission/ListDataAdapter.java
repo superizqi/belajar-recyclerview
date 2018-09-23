@@ -37,13 +37,13 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.Catego
 
     class CategoryViewHolder extends RecyclerView.ViewHolder {
 //        per unit
-        TextView tvNamaDepan, tvNamaBelakang;
+        TextView tvNamaWisata, tvTarifWisata;
         ImageView imgGambar;
 
         public CategoryViewHolder(View itemView) {
             super(itemView);
-            tvNamaDepan = (TextView) itemView.findViewById(R.id.tv_namadepan);
-            tvNamaBelakang = (TextView) itemView.findViewById(R.id.tv_namabelakang);
+            tvNamaWisata= (TextView) itemView.findViewById(R.id.tv_namaWisata);
+            tvTarifWisata= (TextView) itemView.findViewById(R.id.tv_tarifWisata);
             imgGambar = (ImageView) itemView.findViewById(R.id.gambar_di_row);
         }
     }
@@ -60,10 +60,10 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.Catego
     public void onBindViewHolder(CategoryViewHolder holder, int position) {
 //        mengambil data array
 //        mengatur isi viewnya
-        holder.tvNamaDepan.setText(getListData().get(position).getNamaDepan());
-        holder.tvNamaBelakang.setText(getListData().get(position).getNamaBelakang());
+        holder.tvNamaWisata.setText(getListData().get(position).namaWisata);
+        holder.tvTarifWisata.setText(getListData().get(position).getTarifWisata());
         Glide.with(context)
-                .load(getListData().get(position).getGambar())
+                .load(getListData().get(position).getGambarWisata())
                 .override(55,55)
                 .crossFade()
                 .into(holder.imgGambar);
